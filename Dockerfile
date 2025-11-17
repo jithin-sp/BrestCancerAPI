@@ -12,9 +12,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # copy app and model files
 COPY app.py /app/app.py
-COPY model /app/model
+COPY models /app/models
 
-ENV MODEL_DIR=/app/model
+ENV MODEL_DIR=/app/models
 ENV PORT=10000
 
 EXPOSE 10000
